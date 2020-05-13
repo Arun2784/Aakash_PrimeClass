@@ -16,6 +16,7 @@ public class StudentSignupPageTest extends TestBase {
 
 	StudentSignupPage studentsignuppage;
 	TestUtil primeutil;
+	
 
 	public StudentSignupPageTest() {
 
@@ -39,6 +40,8 @@ public class StudentSignupPageTest extends TestBase {
 
 		studentsignuppage.cickuserIcon();
 		studentsignuppage.createstudent(firstName, mobile, stuotp, emailAdd, password, confirmPass);
+		
+		
 		
 		
 	
