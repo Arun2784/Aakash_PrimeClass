@@ -59,17 +59,17 @@ public class CoursesPage extends TestBase {
 
 	}
 
-	public void selectMedicalcourses(String selectClasses, String selectState) throws InterruptedException {
+	public void selectMedicalcourses(String chooseClass, String chooseState) throws InterruptedException {
 
 		Thread.sleep(3000);
 
 		Select classes1 = new Select(AakashClasses);
 
-		classes1.selectByVisibleText(selectClasses);
+		classes1.selectByVisibleText(chooseClass);
 
 		Select state1 = new Select(AakashState);
 
-		state1.selectByVisibleText(selectState);
+		state1.selectByVisibleText(chooseState);
 
 		Thread.sleep(5000);
 

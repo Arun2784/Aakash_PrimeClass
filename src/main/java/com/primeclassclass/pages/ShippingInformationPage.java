@@ -100,12 +100,12 @@ public class ShippingInformationPage extends TestBase {
 		 */
 		Thread.sleep(2000);
 		// ((JavascriptExecutor) driver).executeScript("scroll(0,200)");
-		paymentMethod.click();
+		// paymentMethod.click();
 //			JavascriptExecutor js = (JavascriptExecutor) driver;
 //			js.executeScript("arguments[0].scrollIntoView();", gender);
 
 		((JavascriptExecutor) driver).executeScript("scroll(0,100)");
-		gender.click();
+		// gender.click();
 		firstName.clear();
 		firstName.sendKeys(stu_name);
 		Thread.sleep(4000);
@@ -114,9 +114,8 @@ public class ShippingInformationPage extends TestBase {
 		Thread.sleep(4000);
 
 		Thread.sleep(2000);
-
-		dateofBirth.clear();
-
+		dateofBirth.click();
+		
 		selectMonth.click();
 		System.out.println("Successfully click on Month drop down");
 
@@ -151,6 +150,7 @@ public class ShippingInformationPage extends TestBase {
 			if (date.equalsIgnoreCase(prop.getProperty("dob_date"))) {
 
 				e.click();
+				
 				System.out.println("Successfully date selected");
 				break;
 			}
