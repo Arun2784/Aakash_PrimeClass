@@ -47,14 +47,14 @@ public class ShippinginformationTest extends TestBase {
 	@Test(priority = 1, dataProvider = "getSignUpData", dataProviderClass = DataProviderClass.class)
 
 	public void shippingInformationFill(String firstName, String mobile, String stuotp, String emailAdd,
-			String password, String confirmPass,String chooseClass, String chooseState, String stu_name, String stu_last, String Parent_name,
+			String password, String confirmPass,String chooseClass, String chooseState,String choosecenter, String stu_name, String stu_last, String Parent_name,
 			String Parent_Mobile, String Parent_email, String street_address, String city, String pincode,
 			String state) throws InterruptedException {
 
 		studentsignuppage.cickuserIcon();
 		studentsignuppage.createstudent(firstName, mobile, stuotp, emailAdd, password, confirmPass);
 		dashboard.clickOnCourseLink();
-		coursepage.selectMedicalcourses(chooseClass, chooseState);
+		coursepage.selectMedicalcourses(chooseClass, chooseState,choosecenter);
 		coursepage.clickOnSearchedCourses();
 		checkoutPage.ClickOnproceedToCheckOut();
 		shippinginformation.fill_shipping_information(stu_name, stu_last, Parent_name, Parent_Mobile, Parent_email, street_address, city, pincode, chooseState);

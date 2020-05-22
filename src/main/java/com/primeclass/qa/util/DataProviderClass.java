@@ -8,6 +8,7 @@ import com.primeclass.qa.base.TestBase;
 public class DataProviderClass extends TestBase {
 
 	 String sheetname = "signup";
+	 
 	
 	@DataProvider(name = "getSignUpData")
 	
@@ -16,6 +17,8 @@ public class DataProviderClass extends TestBase {
 		Object[][] data =  TestUtil.signupTestData(sheetname);
 		
 		return data;
+	
+		
 		
 		
 	}

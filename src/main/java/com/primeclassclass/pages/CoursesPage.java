@@ -59,7 +59,7 @@ public class CoursesPage extends TestBase {
 
 	}
 
-	public void selectMedicalcourses(String chooseClass, String chooseState) throws InterruptedException {
+	public void selectMedicalcourses(String chooseClass, String chooseState,String choosecenter) throws InterruptedException {
 
 		Thread.sleep(3000);
 
@@ -77,9 +77,9 @@ public class CoursesPage extends TestBase {
 //		js.executeScript("arguments[0].scrollIntoView();", clickOnApply);
 //		Thread.sleep(5000);
 
-//		Select centers1 = new Select(AakashCenter);
-//
-//		centers1.selectByVisibleText(selectCenters);
+		Select centers1 = new Select(AakashCenter);
+
+		centers1.selectByVisibleText(choosecenter);
 
 		System.out.println("**********Before Click on Apply");
 
