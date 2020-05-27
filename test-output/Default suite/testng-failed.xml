@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.primeclass.qa.testcases.ShippinginformationTest">
+      <class name="com.primeclass.qa.testcases.LoginPageTest">
         <methods>
-          <include name="shippingInformationFill" invocation-numbers="0"/>
           <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="verifyHomePageHeaderTest"/>
         </methods>
-      </class> <!-- com.primeclass.qa.testcases.ShippinginformationTest -->
+      </class> <!-- com.primeclass.qa.testcases.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

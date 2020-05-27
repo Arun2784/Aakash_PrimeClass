@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="RetryFailedSuit" verbose="1">
+
+	<listeners>
+
+		<listener
+			class-name="com.primeclass.RetryAnalyzer.MyTransformer"/>
+
+	</listeners>
+
+	<test name="RetryMultipleFailedTestCases">
+
+		<classes>
+
+			<class name="com.primeclass.qa.testcases.LoginPageTest"/>
+
+		</classes>
+	</test>
+
+
+</suite>

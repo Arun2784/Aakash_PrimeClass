@@ -8,6 +8,8 @@ import com.primeclass.qa.base.TestBase;
 public class DataProviderClass extends TestBase {
 
 	 String sheetname = "signup";
+	 TestUtil utill;
+	 
 	 
 	
 	@DataProvider(name = "getSignUpData")
