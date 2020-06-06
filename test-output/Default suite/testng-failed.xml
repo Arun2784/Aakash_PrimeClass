@@ -5,9 +5,9 @@
     <classes>
       <class name="com.primeclass.qa.testcases.LoginPageTest">
         <methods>
+          <include name="verifyLoginPageTitleTest"/>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="verifyHomePageHeaderTest"/>
         </methods>
       </class> <!-- com.primeclass.qa.testcases.LoginPageTest -->
     </classes>

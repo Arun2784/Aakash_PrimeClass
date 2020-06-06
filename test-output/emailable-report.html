@@ -8,29 +8,44 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">RetryFailedSuit</th></tr>
-<tr><td><a href="#t0">RetryMultipleFailedTestCases</a></td><td class="num">3</td><td class="num">0</td><td class="num attn">3</td><td class="num attn">1</td><td class="num">94,636</td><td></td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">11,330</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">RetryFailedSuit</th></tr></tbody><tbody id="t0"><tr><th colspan="4">RetryMultipleFailedTestCases &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.primeclass.qa.testcases.LoginPageTest</td><td><a href="#m0">verifyHomePageHeaderTest</a></td><td rowspan="1">1590405000309</td><td rowspan="1">135</td></tr><tr><th colspan="4">RetryMultipleFailedTestCases &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="3">com.primeclass.qa.testcases.LoginPageTest</td><td><a href="#m1">verifyHomePageHeaderTest</a></td><td rowspan="3">1590404975361</td><td rowspan="3">64</td></tr><tr class="retriedeven"><td><a href="#m2">verifyHomePageHeaderTest</a></td></tr><tr class="retriedeven"><td><a href="#m3">verifyHomePageHeaderTest</a></td></tr><tr><th colspan="4">RetryMultipleFailedTestCases &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.primeclass.qa.testcases.LoginPageTest</td><td><a href="#m4">VerfiyCenterLinkButton</a></td><td rowspan="1">1590404950972</td><td rowspan="1">160</td></tr><tr class="passedeven"><td><a href="#m5">contactUsTest</a></td><td rowspan="1">1590405014135</td><td rowspan="1">1124</td></tr><tr class="passedeven"><td><a href="#m6">verifyLoginPageTitleTest</a></td><td rowspan="1">1590404938566</td><td rowspan="1">337</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.primeclass.qa.testcases.LoginPageTest</td><td><a href="#m0">verifyLoginPageTitleTest</a></td><td rowspan="1">1590784864961</td><td rowspan="1">82</td></tr></tbody>
 </table>
-<h2>RetryMultipleFailedTestCases</h2><h3 id="m0">com.primeclass.qa.testcases.LoginPageTest#verifyHomePageHeaderTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Header value is not matched expected [Aakash Distance Learning11] but found [Aakash Distance Learning]
-	at com.primeclass.qa.testcases.LoginPageTest.verifyHomePageHeaderTest(LoginPageTest.java:66)
+<h2>Default test</h2><h3 id="m0">com.primeclass.qa.testcases.LoginPageTest#verifyLoginPageTitleTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	Title not Matched expected [Aakash Medical NEET/AIIMS UG Coaching-Engg IIT JEE Coaching | AESL] but found [503 Service Temporarily Unavailable]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at com.primeclass.qa.testcases.LoginPageTest.verifyLoginPageTitleTest(LoginPageTest.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.primeclass.qa.testcases.LoginPageTest#verifyHomePageHeaderTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Header value is not matched expected [Aakash Distance Learning11] but found [Aakash Distance Learning]
-	at com.primeclass.qa.testcases.LoginPageTest.verifyHomePageHeaderTest(LoginPageTest.java:66)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.primeclass.qa.testcases.LoginPageTest#verifyHomePageHeaderTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Header value is not matched expected [Aakash Distance Learning11] but found [Aakash Distance Learning]
-	at com.primeclass.qa.testcases.LoginPageTest.verifyHomePageHeaderTest(LoginPageTest.java:66)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.primeclass.qa.testcases.LoginPageTest#verifyHomePageHeaderTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Header value is not matched expected [Aakash Distance Learning11] but found [Aakash Distance Learning]
-	at com.primeclass.qa.testcases.LoginPageTest.verifyHomePageHeaderTest(LoginPageTest.java:66)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.primeclass.qa.testcases.LoginPageTest#VerfiyCenterLinkButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.primeclass.qa.testcases.LoginPageTest#contactUsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.primeclass.qa.testcases.LoginPageTest#verifyLoginPageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
